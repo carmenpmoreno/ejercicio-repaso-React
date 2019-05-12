@@ -1,0 +1,16 @@
+.App {
+    margin: 10px;
+}
+.card-colors {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.color {
+    height: 50px;
+    width: 50px;
+    color: transparent;
+}
+.palettes, .color {
+    list-style: none;
+}
