@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import Card from './components/Card'
 
 const data = {
   version: 'v0.0.0',
@@ -46,7 +47,11 @@ class App extends React.Component {
           {data.palettes.map((item, index) => {
             return (
               <li className="palette" key={`p${index}`} id={`p${index}`}>
-                <div className="card">
+              <Card 
+                name = {item.name}
+                colors = {item.colors}
+              />
+                {/* <div className="card">
                   <h2 className="card__name  ">{item.name}</h2>
                   <ul className="card__colors">
                     {item.colors.map((color, colorIndex) => {
@@ -62,7 +67,7 @@ class App extends React.Component {
                       );
                     })}
                   </ul>
-                </div>
+                </div> */}
               </li>
             );
           })}
